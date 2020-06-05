@@ -17,4 +17,7 @@ artisan:
 	docker-compose run --rm artisan $(arg)
 
 npm:
-	docker-compose run --rm npm
+	docker-compose run --rm npm $(arg)
+
+composer:
+	docker-compose run --rm composer $(arg)

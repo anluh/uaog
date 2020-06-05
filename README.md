@@ -1,18 +1,12 @@
-# docker-compose-laravel
+# Ukraine Assembly Of God
 A pretty simplified docker-compose workflow that sets up a LEMP network of containers for local Laravel development. You can view the full article that inspired this repo [here](https://medium.com/@aschmelyun).
 
 
 ## Usage
 
-To get started, make sure you have [Docker installed](https://docs.docker.com/docker-for-mac/install/) on your system, and then clone this repository.
-
-Add your entire Laravel project to the `src` folder, then open a terminal and from this cloned respository's root run `docker-compose up -d --build`. Open up your browser of choice to [http://localhost:8080](http://localhost:8080) and you should see your Laravel app running as intended. 
-
-**New:** Three new containers have been added that handle Composer, NPM, and Artisan commands without having to have these platforms installed on your local computer. Use the following command templates from your project root, modifiying them to fit your particular use case:
-
-- `docker-compose run --rm composer update`
-- `docker-compose run --rm npm run dev`
-- `docker-compose run --rm artisan migrate` 
+- `docker-compose run --rm composer ...` - to run `composer` commands
+- `docker-compose run --rm npm run ...` - to run `npm` commands
+- `docker-compose run --rm artisan ...`  - to run `artisan` commands
 
 Containers created and their ports (if used) are as follows:
 
@@ -22,3 +16,14 @@ Containers created and their ports (if used) are as follows:
 - **npm**
 - **composer**
 - **artisan**
+
+## Setup
+
+To get started, make sure you have [Docker installed](https://docs.docker.com/docker-for-mac/install/) on your system.
+
+In root folder run commands:
+
+- `make start` - to start containers
+- `docker-compose run --rm composer install` or `make composer arg=install` - to install composer dependencies
+- `docker-compose run --rm npm run install` or `make npm arg=install` - to install npm dependencies
+- navigate to [localhost:8080](http://localhost:8080/)
