@@ -1,5 +1,5 @@
 # Assembly Of God Ukraine
-A pretty simplified docker-compose workflow that sets up a LEMP network of containers for local Laravel development. You can view the full article that inspired this repo [here](https://medium.com/@aschmelyun).
+Website with docker-compose & Laravel. 
 
 
 ## Usage
