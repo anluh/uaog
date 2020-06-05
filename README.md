@@ -1,4 +1,4 @@
-# Ukraine Assembly Of God
+# Assembly Of God Ukraine
 A pretty simplified docker-compose workflow that sets up a LEMP network of containers for local Laravel development. You can view the full article that inspired this repo [here](https://medium.com/@aschmelyun).
 
 
@@ -23,7 +23,7 @@ To get started, make sure you have [Docker installed](https://docs.docker.com/do
 
 In root folder run commands:
 
-- `make start` - to start containers
+- `docker-compose up -d --build` or `make start` - to start containers
 - `docker-compose run --rm composer install` or `make composer arg=install` - to install composer dependencies
 - `docker-compose run --rm npm run install` or `make npm arg=install` - to install npm dependencies
 - navigate to [localhost:8080](http://localhost:8080/)
