@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Ministry;
 use Illuminate\Http\Request;
 
 class MinistryController extends Controller
@@ -13,7 +14,8 @@ class MinistryController extends Controller
      */
     public function index()
     {
-        //
+        $ministries = Ministry::all();
+        return view('ministries.index')->with('ministries', $ministries);
     }
 
     /**
