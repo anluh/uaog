@@ -1,0 +1,11 @@
+uuid: ba3d1a87-cde9-43a6-a71e-d68348a70a77
+langcode: en
+status: true
+dependencies: {  }
+id: moderator
+label: Moderator
+weight: 3
+is_admin: null
+permissions:
+  - 'edit general_configurations config page entity'
+  - 'view general_configurations config page entity'

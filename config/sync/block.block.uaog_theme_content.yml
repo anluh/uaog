@@ -1,0 +1,22 @@
+uuid: 0fb64e40-7ed0-46da-8d70-a40e122285ad
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - uaog_theme
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: uaog_theme_content
+theme: uaog_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

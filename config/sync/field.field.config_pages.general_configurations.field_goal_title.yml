@@ -1,0 +1,21 @@
+uuid: 9233e49e-30d5-42a9-8248-617138eda9d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.general_configurations
+    - field.storage.config_pages.field_goal_title
+id: config_pages.general_configurations.field_goal_title
+field_name: field_goal_title
+entity_type: config_pages
+bundle: general_configurations
+label: 'Ціль (заголовок)'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'АСАМБЛЕЯ БОГА - ЦЕ ВСЕСВІТНІЙ РУХ П''ЯТИДЕСЯТНКІВ'
+default_value_callback: ''
+settings: {  }
+field_type: string

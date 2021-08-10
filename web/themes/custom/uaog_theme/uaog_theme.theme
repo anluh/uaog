@@ -1,0 +1,25 @@
+<?php
+/**
+ * @file
+ * Implementing hook functions here.
+ *
+ */
+
+/**
+ * Implementing hook_preprocess_page().
+ */
+
+function uaog_theme_preprocess_page(&$variables) {
+  $storage = Drupal::service('entity_type.manager')
+    ->getStorage('config_pages')
+    ->load('custom_config');
+
+  $variables['online'] = $storage->get('field_online')->value;
+  $variables['goal_title'] = $storage->get('field_goal_title')->value;
+  $variables['goal'] = $storage->get('field_goal')->value;
+  $variables['dir_src'] = Drupal::theme()->getActiveTheme()->getPath() . '/html/dist';
+
+  $nidsMinistries = Drupal::entityQuery('node')->condition('type', 'ministry')->sort('created', 'DESC')->execute();
+  $ministries = Drupal\node\Entity\Node::loadMultiple($nidsMinistries);
+  $variables['ministries'] = $ministries;
+}

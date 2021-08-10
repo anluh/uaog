@@ -1,0 +1,11 @@
+name: Uaog
+type: theme
+description: 'Тема для сайту Асамблеї Бога луцьк'
+core_version_requirement: ^8 || ^9
+base theme: bartik
+libraries:
+  - uaog_theme/global-styling
+regions:
+  header: Header
+  content: Content
+  footer: Footer

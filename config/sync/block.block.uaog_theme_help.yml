@@ -1,0 +1,22 @@
+uuid: 0a37e0f2-ba5b-4b3b-9b93-ba13b9d34045
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - uaog_theme
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: uaog_theme_help
+theme: uaog_theme
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

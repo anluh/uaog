@@ -1,0 +1,19 @@
+uuid: 529b5e94-68ce-4631-a607-080366d0115d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_video_link
+    - paragraphs.paragraphs_type.banner
+id: paragraph.banner.field_video_link
+field_name: field_video_link
+entity_type: paragraph
+bundle: banner
+label: 'Video link'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

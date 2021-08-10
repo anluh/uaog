@@ -1,0 +1,11 @@
+global-styling:
+  version: 1.x
+  css:
+    base:
+      src/css/slick.css: {}
+      html/dist/css/style.css: {}
+  js:
+    https://maps.googleapis.com/maps/api/js?key=AIzaSyDkTcUh8DoxnB3uAD-cZ1-cT495UVoU4as&libraries=&v=weekly: { type: external }
+    html/dist/js/bundle.js: {}
+  dependencies:
+    - core/jquery.once

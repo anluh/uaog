@@ -1,0 +1,49 @@
+uuid: 038df0e7-8161-4f3a-a1bf-f07b9f103a39
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.general_configurations
+    - field.field.config_pages.general_configurations.field_goal
+    - field.field.config_pages.general_configurations.field_goal_title
+    - field.field.config_pages.general_configurations.field_online
+    - field.field.config_pages.general_configurations.field_online_link
+id: config_pages.general_configurations.default
+targetEntityType: config_pages
+bundle: general_configurations
+mode: default
+content:
+  field_goal:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_goal_title:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_online:
+    weight: 1
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_online_link:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

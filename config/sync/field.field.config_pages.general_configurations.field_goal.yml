@@ -1,0 +1,21 @@
+uuid: 3d01086d-3909-4a9d-8bf0-dbc59f7d1334
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.general_configurations
+    - field.storage.config_pages.field_goal
+id: config_pages.general_configurations.field_goal
+field_name: field_goal
+entity_type: config_pages
+bundle: general_configurations
+label: Ціль
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: "Основна ціль церкви - проголошення Благої Звістки.\r\nМи віримо в те, що кожна людина може і повинна мати особисті взаємовідносини з Ісусом Христом і мати можливість бути частиною місцевої діючої церкви"
+default_value_callback: ''
+settings: {  }
+field_type: string_long

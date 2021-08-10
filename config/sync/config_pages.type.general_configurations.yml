@@ -1,0 +1,17 @@
+uuid: 9d0c3f49-56ea-4ebb-8822-638af20b5444
+langcode: en
+status: true
+dependencies: {  }
+id: general_configurations
+label: 'General configurations'
+context:
+  show_warning: true
+  group:
+    language: false
+  fallback:
+    language: ''
+menu:
+  path: /admin/general_configurations
+  weight: 0
+  description: 'General configurations'
+token: true

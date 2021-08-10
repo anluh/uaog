@@ -1,0 +1,80 @@
+uuid: 983c5575-eb3e-48a6-a5c5-7fdb35e5107d
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.general_configurations
+    - field.field.config_pages.general_configurations.field_goal
+    - field.field.config_pages.general_configurations.field_goal_title
+    - field.field.config_pages.general_configurations.field_online
+    - field.field.config_pages.general_configurations.field_online_link
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_goal:
+      children:
+        - field_goal_title
+        - field_goal
+      parent_name: ''
+      weight: 3
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Блок ціль церкви'
+    group_online:
+      children:
+        - field_online
+        - field_online_link
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Блок онлайн трансляції'
+id: config_pages.general_configurations.default
+targetEntityType: config_pages
+bundle: general_configurations
+mode: default
+content:
+  field_goal:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_goal_title:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_online:
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_online_link:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  label: true
